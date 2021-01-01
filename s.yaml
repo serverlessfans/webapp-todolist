@@ -7,5 +7,5 @@ todoList-service:
           Path: ./
           Pre: true
   Properties:
-    Region: cn-hangzhou
+    Region: ${Env(REGION)}
     Config: s
