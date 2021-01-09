@@ -2,10 +2,10 @@ todoList-service:
   Component: fun
   Provider: alibaba
   Extends:
-      deploy:
-        - Hook: npm install
-          Path: ./
-          Pre: true
+    package:
+      - Hook: npm install
+        Path: ./
+        Pre: true
   Properties:
     Region: ${Env(REGION)}
     Config: s
